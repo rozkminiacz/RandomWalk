@@ -1,0 +1,4 @@
+1. Set number of steps and particles in 'random_walk.c'
+2. Compile with gcc random_walk.c - o random_walk.out
+3. Execute script (script is launching other script, prepared for gnuplot)
+4. Load frames to ImageJ / Photoshop / whatever and make amazing animation!

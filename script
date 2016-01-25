@@ -1,0 +1,5 @@
+#!/bin/bash
+#very simple shell script
+./random_walk.out
+gnuplot bladzenie3d.pg
+

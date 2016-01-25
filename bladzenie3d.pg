@@ -1,0 +1,25 @@
+print "drawing..."
+do for[ii=0:999]{
+
+set terminal gif size 768,512
+
+set output sprintf('frame%05.0f.png',ii)
+set title "Błądzenie przypadkowe w 3D"
+set autoscale
+set xlabel "X"
+set ylabel "Y"
+set zlabel "Z" 
+
+
+
+set style data lines
+set grid x y z mx my mz
+
+
+print ii
+filename(n) = sprintf("%d", n)
+splot for [i=1:999] filename(i) every ::0::ii using 1:2:3 with lines notitle
+
+
+unset output
+}
